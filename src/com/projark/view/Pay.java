@@ -37,6 +37,10 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTablePayment = new javax.swing.JTable();
         jButtonPayment = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jTextFieldSearchCustomer = new javax.swing.JTextField();
 
         jButtonSearch.setText("Buscar");
         jButtonSearch.addActionListener(new java.awt.event.ActionListener() {
@@ -81,6 +85,8 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             }
         });
 
+        jLabel6.setText("Projecto:");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -89,6 +95,24 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
                 .addContainerGap(548, Short.MAX_VALUE)
                 .addComponent(jButtonPayment, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(73, 73, 73))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(98, 98, 98)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel1))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldParcelId, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(56, 56, 56)
+                                .addComponent(jLabel6)
+                                .addGap(76, 76, 76)
+                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jTextFieldSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(67, 67, 67)
@@ -97,19 +121,13 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(25, 25, 25)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel5)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel3)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jTextFieldPayDay, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel4))))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel1)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jTextFieldParcelId, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jTextFieldPayDay, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel4))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(0, 0, Short.MAX_VALUE)
                                     .addComponent(jButtonSearch)
                                     .addGap(36, 36, 36)
                                     .addComponent(jLabel2)))
@@ -126,21 +144,29 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(403, Short.MAX_VALUE)
+                .addGap(63, 63, 63)
+                .addComponent(jTextFieldSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldParcelId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE)
                 .addComponent(jButtonPayment)
                 .addGap(22, 22, 22))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(63, 63, 63)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(jTextFieldParcelId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButtonSearch)
                         .addComponent(jLabel2)
                         .addComponent(jTextFieldProjectId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(31, 31, 31)
-                    .addComponent(jLabel5)
-                    .addGap(38, 38, 38)
+                    .addGap(83, 83, 83)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jTextFieldPayDay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel3)
@@ -156,7 +182,7 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
 
     private void jButtonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSearchActionPerformed
         // TODO add your handling code here:
-        if(!jTextFieldParcelId.getText().equals("")){
+       /* if(!jTextFieldParcelId.getText().equals("")){
             int cod;
             cod = Integer.parseInt(jTextFieldParcelId.getText());
             mod.setParcelId(cod);
@@ -168,15 +194,18 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             fillTable("SELECT *FROM parcels WHERE project_id ='"+jTextFieldProjectId.getText()+"'");
         }else{
            JOptionPane.showMessageDialog(null, "Informe um número de Parcela válido!");
-        }
+        }*/
+       connect.connection();
+       //mod = dal.getParcel(mod);
+       fillTable("SELECT p.project_name, l.id, l.pay_date,l.each_parcel_value, l.status, c.customer FROM projects p JOIN parcels l ON p.id=l.project_id JOIN cliente c ON c.id=p.customer_id WHERE c.customer LIKE'%"+jTextFieldSearchCustomer.getText()+"%'");
     }//GEN-LAST:event_jButtonSearchActionPerformed
 
     private void jButtonPaymentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPaymentActionPerformed
         // TODO add your handling code here:
-        String status="A Pagar";
+       // String status="A Pagar";
         mod.setParcelId(Integer.parseInt(jTextFieldParcelId.getText()));
         dal.reduceParcel(mod);
-        fillTable("SELECT*FROM parcels WHERE status ='"+status+"'");
+       // fillTable("SELECT*FROM parcels WHERE status ='"+status+"'");
     }//GEN-LAST:event_jButtonPaymentActionPerformed
 
     private void jTablePaymentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTablePaymentMouseClicked
@@ -186,9 +215,10 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             String id_parcel=""+jTablePayment.getValueAt(jTablePayment.getSelectedRow(), 0);
             connect.connection();
 
-            connect.executeSql("SELECT *FROM parcels WHERE id ='"+id_parcel+"' ");
+            connect.executeSql("SELECT p.project_name, l.id, l.pay_date,l.each_parcel_value, l.status, c.customer FROM projects p JOIN parcels l ON p.id=l.project_id JOIN cliente c ON c.id=p.customer_id WHERE l.id ='"+id_parcel+"' ");
             connect.rs.first();
-            jTextFieldParcelId.setText(String.valueOf(connect.rs.getInt("id")));
+            jTextFieldParcelId.setText(String.valueOf(connect.rs.getInt("l.id")));
+            jTextFieldPayDay.setText(connect.rs.getString("l.pay_date"));
             
 
             connect.disconnect();
@@ -201,14 +231,14 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
  public void fillTable (String sql){
         ArrayList items = new ArrayList();
         
-        String []columns = new String []{"Cód.Parcela", "Cód do Projecto", "Valor", "Estado"  };  
+        String []columns = new String []{"Cód.Parcela", "Cliente", "Projecto","Preço da Parcela","Data de Pagamento", "Estado"  };  
         connect.connection();
         
         connect.executeSql(sql);
         try {
             connect.rs.first();
             do{
-                items.add( new Object[]{connect.rs.getInt("id"), connect.rs.getInt("project_id"), connect.rs.getFloat("each_parcel_value"), connect.rs.getString("status")});
+                items.add( new Object[]{connect.rs.getInt("l.id"), connect.rs.getString("c.customer"),connect.rs.getString("p.project_name"), connect.rs.getFloat("l.each_parcel_value"), connect.rs.getString("l.pay_date"), connect.rs.getString("l.status")});
             }while(connect.rs.next());
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Não Existem mais Parcelas a Pagar ");
@@ -225,7 +255,8 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
         jTablePayment.getColumnModel().getColumn(2).setResizable(false);
          jTablePayment.getColumnModel().getColumn(3).setPreferredWidth(100);
         jTablePayment.getColumnModel().getColumn(3).setResizable(false);
-        
+          jTablePayment.getColumnModel().getColumn(4).setPreferredWidth(100);
+        jTablePayment.getColumnModel().getColumn(4).setResizable(false);
         jTablePayment.getTableHeader().setReorderingAllowed(false);
         jTablePayment.setAutoResizeMode(jTablePayment.AUTO_RESIZE_OFF);
         jTablePayment.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -242,11 +273,15 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTablePayment;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextFieldParcelId;
     private javax.swing.JTextField jTextFieldParcelValue;
     private javax.swing.JTextField jTextFieldPayDay;
     private javax.swing.JTextField jTextFieldProjectId;
+    private javax.swing.JTextField jTextFieldSearchCustomer;
     // End of variables declaration//GEN-END:variables
 }

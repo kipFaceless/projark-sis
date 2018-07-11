@@ -500,7 +500,7 @@ public class FrameProject extends javax.swing.JInternalFrame {
                                 mod.setLength(Float.parseFloat(jTextFieldLength.getText()));
                                  mod.setWidth(Float.parseFloat(jTextFieldWidth.getText()));
                                 mod.setState(jTextFieldState.getText());
-                              
+                                 mod.setCustomerId(Integer.parseInt(jTextFieldCustomerId.getText()));
                                 mod.setNeighbour(jTextFieldNeighbour.getText());
                                 mod.setDate(jFormattedTextFieldDate.getText());
                                 mod.setId(projId);
