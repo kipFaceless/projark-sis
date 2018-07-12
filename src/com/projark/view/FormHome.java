@@ -38,6 +38,10 @@ public class FormHome extends javax.swing.JFrame {
         jMenuFile = new javax.swing.JMenu();
         jMenuItemCustomers = new javax.swing.JMenuItem();
         jMenuItemUsers = new javax.swing.JMenuItem();
+        jMenuItemStates = new javax.swing.JMenuItem();
+        jMenuItemNeighbours = new javax.swing.JMenuItem();
+        jMenuItemTax = new javax.swing.JMenuItem();
+        jMenuItemParcelsQty = new javax.swing.JMenuItem();
         jMenuNewProj = new javax.swing.JMenu();
         jMenuItemNewProj = new javax.swing.JMenuItem();
         jMenuReports = new javax.swing.JMenu();
@@ -56,7 +60,7 @@ public class FormHome extends javax.swing.JFrame {
 
         jMenuFile.setText("Cadastro");
 
-        jMenuItemCustomers.setText("Cadastro de Clientes ");
+        jMenuItemCustomers.setText("Clientes ");
         jMenuItemCustomers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemCustomersActionPerformed(evt);
@@ -64,13 +68,45 @@ public class FormHome extends javax.swing.JFrame {
         });
         jMenuFile.add(jMenuItemCustomers);
 
-        jMenuItemUsers.setText("Cadastro de Usuários");
+        jMenuItemUsers.setText("Usuários");
         jMenuItemUsers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemUsersActionPerformed(evt);
             }
         });
         jMenuFile.add(jMenuItemUsers);
+
+        jMenuItemStates.setText("Províncias");
+        jMenuItemStates.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemStatesActionPerformed(evt);
+            }
+        });
+        jMenuFile.add(jMenuItemStates);
+
+        jMenuItemNeighbours.setText("Bairros");
+        jMenuItemNeighbours.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemNeighboursActionPerformed(evt);
+            }
+        });
+        jMenuFile.add(jMenuItemNeighbours);
+
+        jMenuItemTax.setText("Juros");
+        jMenuItemTax.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemTaxActionPerformed(evt);
+            }
+        });
+        jMenuFile.add(jMenuItemTax);
+
+        jMenuItemParcelsQty.setText("Quantidade de Parcelas");
+        jMenuItemParcelsQty.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemParcelsQtyActionPerformed(evt);
+            }
+        });
+        jMenuFile.add(jMenuItemParcelsQty);
 
         jMenuBar1.add(jMenuFile);
 
@@ -187,6 +223,34 @@ public class FormHome extends javax.swing.JFrame {
         jDesktopPaneFrames.add(payment);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void jMenuItemStatesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemStatesActionPerformed
+        // TODO add your handling code here:
+        FrameStates states = new FrameStates();
+        states.setVisible(true);
+        jDesktopPaneFrames.add(states);
+    }//GEN-LAST:event_jMenuItemStatesActionPerformed
+
+    private void jMenuItemNeighboursActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNeighboursActionPerformed
+        // TODO add your handling code here:
+        FrameNeighbour neighbour = new FrameNeighbour();
+        neighbour.setVisible(true);
+        jDesktopPaneFrames.add(neighbour);
+    }//GEN-LAST:event_jMenuItemNeighboursActionPerformed
+
+    private void jMenuItemParcelsQtyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemParcelsQtyActionPerformed
+        // TODO add your handling code here:
+         FrameParcelsQty qties = new FrameParcelsQty();
+        qties.setVisible(true);
+        jDesktopPaneFrames.add(qties);
+    }//GEN-LAST:event_jMenuItemParcelsQtyActionPerformed
+
+    private void jMenuItemTaxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTaxActionPerformed
+        // TODO add your handling code here:
+        FrameTax tax = new FrameTax();
+        tax.setVisible(true);
+        jDesktopPaneFrames.add(tax);
+    }//GEN-LAST:event_jMenuItemTaxActionPerformed
+
     
    
      
@@ -242,7 +306,11 @@ ex.printStackTrace();
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItemCustomers;
+    private javax.swing.JMenuItem jMenuItemNeighbours;
     private javax.swing.JMenuItem jMenuItemNewProj;
+    private javax.swing.JMenuItem jMenuItemParcelsQty;
+    private javax.swing.JMenuItem jMenuItemStates;
+    private javax.swing.JMenuItem jMenuItemTax;
     private javax.swing.JMenuItem jMenuItemUsers;
     private javax.swing.JMenu jMenuNewProj;
     private javax.swing.JMenu jMenuReports;

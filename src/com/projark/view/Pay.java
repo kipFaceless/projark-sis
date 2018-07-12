@@ -30,16 +30,15 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
         jLabel5 = new javax.swing.JLabel();
         jTextFieldPayDay = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jTextFieldProjectId = new javax.swing.JTextField();
         jTextFieldParcelValue = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTablePayment = new javax.swing.JTable();
         jButtonPayment = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        jTextFieldCustomer = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextFieldProjectName = new javax.swing.JTextField();
         jTextFieldSearchCustomer = new javax.swing.JTextField();
 
         jButtonSearch.setText("Buscar");
@@ -49,15 +48,19 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             }
         });
 
+        jTextFieldParcelId.setEditable(false);
+
         jLabel1.setText("Código da Parcela:");
 
         jLabel5.setText("Proprietário:");
 
+        jTextFieldPayDay.setEditable(false);
+
         jLabel3.setText("Data do Pagamento:");
 
-        jLabel2.setText("Código do Projecto:");
-
         jLabel4.setText("Valor da Parcela:");
+
+        jTextFieldParcelValue.setEditable(false);
 
         jTablePayment.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -85,7 +88,11 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             }
         });
 
+        jTextFieldCustomer.setEditable(false);
+
         jLabel6.setText("Projecto:");
+
+        jTextFieldProjectName.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,38 +113,36 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTextFieldParcelId, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTextFieldCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(56, 56, 56)
                                 .addComponent(jLabel6)
                                 .addGap(76, 76, 76)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jTextFieldProjectName, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(jTextFieldSearchCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(67, 67, 67)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addGap(25, 25, 25)
+                                    .addGap(92, 92, 92)
                                     .addComponent(jLabel3)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(jTextFieldPayDay, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
                                     .addComponent(jLabel4))
                                 .addGroup(layout.createSequentialGroup()
                                     .addGap(0, 0, Short.MAX_VALUE)
                                     .addComponent(jButtonSearch)
-                                    .addGap(36, 36, 36)
-                                    .addComponent(jLabel2)))
+                                    .addGap(131, 131, 131)))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jTextFieldParcelValue, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jTextFieldProjectId, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(60, 60, 60))
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(25, 25, 25)
+                            .addGap(92, 92, 92)
                             .addComponent(jScrollPane1)))
                     .addGap(68, 68, 68)))
         );
@@ -153,9 +158,9 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextFieldCustomer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextFieldProjectName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 255, Short.MAX_VALUE)
                 .addComponent(jButtonPayment)
                 .addGap(22, 22, 22))
@@ -164,7 +169,6 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
                     .addGap(63, 63, 63)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButtonSearch)
-                        .addComponent(jLabel2)
                         .addComponent(jTextFieldProjectId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGap(83, 83, 83)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -205,7 +209,7 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
        // String status="A Pagar";
         mod.setParcelId(Integer.parseInt(jTextFieldParcelId.getText()));
         dal.reduceParcel(mod);
-       // fillTable("SELECT*FROM parcels WHERE status ='"+status+"'");
+        fillTable("SELECT p.project_name, l.id, l.pay_date,l.each_parcel_value, l.status, c.customer FROM projects p JOIN parcels l ON p.id=l.project_id JOIN cliente c ON c.id=p.customer_id");
     }//GEN-LAST:event_jButtonPaymentActionPerformed
 
     private void jTablePaymentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTablePaymentMouseClicked
@@ -219,7 +223,10 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
             connect.rs.first();
             jTextFieldParcelId.setText(String.valueOf(connect.rs.getInt("l.id")));
             jTextFieldPayDay.setText(connect.rs.getString("l.pay_date"));
-            
+            jTextFieldCustomer.setText(connect.rs.getString("c.customer"));
+            jTextFieldProjectName.setText(connect.rs.getString("p.project_name"));
+            jTextFieldParcelValue.setText(String.valueOf(connect.rs.getFloat("l.each_parcel_value")));
+           
 
             connect.disconnect();
             jButtonPayment.setEnabled(true);
@@ -269,19 +276,18 @@ ParcelPaymentModel mod = new ParcelPaymentModel();
     private javax.swing.JButton jButtonPayment;
     private javax.swing.JButton jButtonSearch;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTablePayment;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextFieldCustomer;
     private javax.swing.JTextField jTextFieldParcelId;
     private javax.swing.JTextField jTextFieldParcelValue;
     private javax.swing.JTextField jTextFieldPayDay;
     private javax.swing.JTextField jTextFieldProjectId;
+    private javax.swing.JTextField jTextFieldProjectName;
     private javax.swing.JTextField jTextFieldSearchCustomer;
     // End of variables declaration//GEN-END:variables
 }
